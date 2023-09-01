@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="subcribe.css">
+    <script src="subcribe.js" defer></script>
+</head>
+<body>
+    <button id="button" onclick="subcrribebutton()" onblur="hideDropdown()">
+        <img id="icon" src="./bell-regular.svg"><span id="message">subcribe</span>
+        <span id="dropdown">v</span> 
+           
+          <div id="dropdownContainer">
+            <div class="dropDownbuttonContainerr" onclick="statuschange('pngkit_youtube-subscribe-button-png_44491.png')">
+            <img src="pngkit_youtube-subscribe-button-png_44491.png">
+             <span type="button" class="dropDownbuttonContainerr">All</span>
+            </div>
+            <div class="dropDownbuttonContainerr" onclick="statuschange('./bell-regular.svg')">
+             <img src="./bell-regular.svg">
+             <span type="button" class="dropDownbuttonContainerr">Personalised</span>
+            </div>
+            <div class="dropDownbuttonContainerr" onclick="statuschange('bell-slash-regular.svg')">
+            <img src="bell-slash-regular.svg">
+             <span type="button" class="dropDownbuttonContainerr">None</span>
+            </div>
+            <div class="dropDownbuttonContainerr" onclick="statuschange(' ')">
+            <img src="user-minus-solid.svg">
+            <span type="button" class="dropDownbuttonContainerr">Unsubcribe</span>
+            </div>
+          </div>
+        </button>
+        <div id="unsubcribeWindow">
+            <h6>Unsunbricbe from Dr. Dre?</h6>
+            <input id="can" onclick="closeunsub()" type="button" value="cancle">
+            <input id="unsub" onclick="usub()" type="button" value="Unsubcribe">
+        </div>
+</body>
+</html>
